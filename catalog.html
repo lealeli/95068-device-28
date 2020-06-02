@@ -24,6 +24,22 @@
     <symbol id="instagram" viewBox="0 0 32 32">
       <path d="M20.8 16a4.8 4.8 0 11-9.6 0c0-.274.029-.54.078-.8H9.6v6.395c0 .445.36.805.805.805h11.192a.805.805 0 00.803-.805V15.2h-1.678c.05.26.078.527.078.8zM16 19.2a3.202 3.202 0 10-.002-6.403A3.202 3.202 0 0016 19.2zm3.84-6.56h1.918a.482.482 0 00.482-.48v-1.918a.481.481 0 00-.482-.482H19.84a.482.482 0 00-.482.482v1.918c.002.264.218.48.482.48zM16 .64a15.36 15.36 0 100 30.72A15.36 15.36 0 0016 .64zm8 21.582C24 23.2 23.2 24 22.222 24H9.777C8.8 24 8 23.2 8 22.223V9.777C8 8.8 8.8 8 9.777 8h12.445C23.2 8 24 8.8 24 9.778v12.444z"/>
     </symbol>
+    <symbol id="cart" viewBox="0 0 10 10">
+      <path d="M9.862 2.522a.358.358 0 00-.273-.129H7.658V3.42c0 .471-.404.855-.901.855s-.901-.384-.901-.855V2.393H4.054V3.42c0 .471-.404.855-.9.855-.498 0-.902-.384-.902-.855V2.393H.321a.358.358 0 00-.273.129.397.397 0 00-.09.3l.648 5.963C.618 9.457 1.142 10 1.784 10h6.342c.642 0 1.166-.543 1.178-1.215l.649-5.964a.398.398 0 00-.09-.3z"/>
+      <path d="M3.153 3.76c.2 0 .36-.153.36-.341v-1.88c0-.528.562-.855 1.082-.855h.9c.548 0 .902.335.902.854v1.88c0 .19.161.343.36.343.199 0 .36-.154.36-.342v-1.88C7.117.646 6.435 0 5.496 0h-.901C3.6 0 2.793.69 2.793 1.538v1.88c0 .19.162.343.36.343z"/>
+    </symbol>
+    <symbol id="chart" viewBox="0 0 14 14">
+      <path d="M2.917 5.367h1.75v5.716h-1.75V5.367zm3.266-2.45h1.634v8.166H6.183V2.917zM9.45 7.583h1.633v3.5H9.45v-3.5z"/>
+    </symbol>
+    <symbol id="search" viewBox="0 0 16 16">
+      <path d="M6.667 12a5.301 5.301 0 003.264-1.125l2.931 2.93.943-.942-2.931-2.931A5.3 5.3 0 0012 6.667a5.34 5.34 0 00-5.333-5.334 5.34 5.34 0 00-5.334 5.334A5.34 5.34 0 006.667 12zm0-9.333c2.206 0 4 1.794 4 4s-1.794 4-4 4-4-1.794-4-4 1.794-4 4-4z"/>
+    </symbol>
+    <symbol id="user" viewBox="0 0 13 14">
+      <path d="M6.5 2.333c1.197 0 2.167 1.044 2.167 2.334C8.667 5.956 7.697 7 6.5 7 5.303 7 4.333 5.956 4.333 4.667c0-1.29.97-2.334 2.167-2.334zm0 9.334s4.333 0 4.333-1.167c0-1.4-2.112-2.917-4.333-2.917-2.22 0-4.333 1.517-4.333 2.917 0 1.167 4.333 1.167 4.333 1.167z"/>
+    </symbol>
+    <symbol id="arrow" viewBox="0 0 11 10">
+      <path d="M11 0H0l5.5 10L11 0z"/>
+    </symbol>
   </svg>
   <header>
     <a href="">
@@ -33,14 +49,33 @@
     </a>
     <div>
       <form  action="https://echo.htmlacademy.ru" method="post">
-        <label for="search1"><img src="img/icon_search.svg" width="12" height="12" alt="Поиск"></label>
+        <label for="search1">
+          <svg width="16" height="16">
+            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#search"></use>
+          </svg>
+        </label>
         <input type="search" id="search1" name="search" placeholder="Поиск">
         <button type="submit">Найти</button>
       </form>
-      <a href=""><img src="img/icon_user.svg" width="12" height="12" alt="Личный кабинет">Валентин Петухов</a>
+      <a href="">
+        <svg width="13" height="14">
+          <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#user"></use>
+        </svg>
+        Валентин Петухов
+      </a>
       <a href="">Выйти</a>
-      <a href=""><img src="img/icon_chart.svg" width="12" height="12" alt="Сравнить">Сравнить</a>
-      <a href=""><img src="img/icon_cart.svg"  width="12" height="12" alt="Корзина">Корзина</a>
+      <a href="">
+        <svg width="14" height="14">
+          <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#chart"></use>
+        </svg>
+        Сравнить
+      </a>
+      <a href="">
+        <svg width="10" height="10">
+          <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#cart"></use>
+        </svg>
+        Корзина
+      </a>
     </div>
     <nav>
       <ul>
@@ -129,8 +164,16 @@
         <a href="#">По популярности</a>
       </div>
       <div>
-        <a href="#"><img src="img/st.svg" alt="Стрелка навигации"></a>
-        <a href="#"><img src="img/st.svg" alt="Стрелка навигации"></a>
+        <a href="#">
+          <svg width="11" height="10">
+            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#arrow"></use>
+          </svg>
+        </a>
+        <a href="#">
+          <svg width="11" height="10">
+            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#arrow"></use>
+          </svg>
+        </a>
       </div>
     </section>
 
@@ -237,10 +280,25 @@
     </div>
     <div>
       <div>
-        <a href=""><img src="img/icon_user.svg" width="12" height="12" alt="Личный кабинет">Валентин Петухов</a>
+        <a href="">
+          <svg width="13" height="14">
+            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#user"></use>
+          </svg>
+          Валентин Петухов
+        </a>
         <a href="">Выйти</a>
-        <a href=""><img src="img/icon_chart.svg" width="12" height="12" alt="Сравнить">Сравнить</a>
-        <a href=""><img src="img/icon_cart.svg"  width="12" height="12" alt="Корзина">Корзина</a>
+        <a href="">
+          <svg width="14" height="14">
+            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#chart"></use>
+          </svg>
+          Сравнить
+        </a>
+        <a href="">
+          <svg width="10" height="10">
+            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#cart"></use>
+          </svg>
+          Корзина
+        </a>
       </div>
       <p>Тел.: <a href="tel:+74954959595">+7 (495) 495-95-95</a></p>
       <a href="https://htmlacademy.ru/intensive/htmlcss">
