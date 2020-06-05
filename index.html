@@ -59,13 +59,13 @@
     <path d="M6.5 2.333c1.197 0 2.167 1.044 2.167 2.334C8.667 5.956 7.697 7 6.5 7 5.303 7 4.333 5.956 4.333 4.667c0-1.29.97-2.334 2.167-2.334zm0 9.334s4.333 0 4.333-1.167c0-1.4-2.112-2.917-4.333-2.917-2.22 0-4.333 1.517-4.333 2.917 0 1.167 4.333 1.167 4.333 1.167z"/>
   </symbol>
 </svg>
-<header>
-  <a href="#">
+<header class="header">
+  <a class="header_logo" href="#">
     <svg width="163" height="35">
       <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#logo"></use>
     </svg>
   </a>
-  <div>
+  <div class="header_personal">
     <form  action="https://echo.htmlacademy.ru" method="post">
       <label for="search1">
         <svg width="16" height="16">
@@ -73,66 +73,65 @@
         </svg>
       </label>
       <input id="search1" name="search" placeholder="Поиск" type="search">
-      <button type="submit">Найти</button>
+      <button class="button_search" type="submit">Найти</button>
     </form>
-    <a href="">
+    <a class="header_personal_item" href="">
       <svg width="13" height="14">
         <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#user"></use>
       </svg>
       Войти
     </a>
-    <a href="">
+    <a class="header_personal_item" href="">
       <svg width="14" height="14">
         <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#chart"></use>
       </svg>
       Сравнить
     </a>
-    <a href="">
+    <a class="header_personal_item" href="">
       <svg width="10" height="10">
         <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#cart"></use>
       </svg>
       Корзина
     </a>
   </div>
-  <nav>
-    <ul>
-      <li><a href="catalog.html">Каталог</a>
-        <ul>
-          <li><a href="">Виртуальная реальность</a></li>
-          <li><a href="">Моноподы для селфи</a></li>
-          <li><a href="">Экшн-камеры</a></li>
-          <li><a href="">Фитнес-браслеты</a></li>
-          <li><a href="">Умные часы</a></li>
-          <li><a href="">Квадрокоптер</a></li>
+  <nav class="header-menu">
+    <ul class="header-menu_list">
+      <li class="header-menu_item"><a href="catalog.html">Каталог</a>
+        <ul class="submenu_list">
+          <li class="submenu_item"><a href="">Виртуальная реальность</a></li>
+          <li class="submenu_item"><a href="">Моноподы для селфи</a></li>
+          <li class="submenu_item"><a href="">Экшн-камеры</a></li>
+          <li class="submenu_item"><a href="">Фитнес-браслеты</a></li>
+          <li class="submenu_item"><a href="">Умные часы</a></li>
+          <li class="submenu_item"><a href="">Квадрокоптер</a></li>
         </ul>
       </li>
-      <li><a href="">Доставка</a></li>
-      <li><a href="">Гарантия</a></li>
-      <li><a href="">Контакты</a></li>
+      <li class="header-menu_item"><a href="">Доставка</a></li>
+      <li class="header-menu_item"><a href="">Гарантия</a></li>
+      <li class="header-menu_item"><a href="">Контакты</a></li>
     </ul>
   </nav>
 </header>
 <main>
   <h1 class="visually-hidden">Интернет-магазин гаджетов Device</h1>
-
-  <div>
-    <input checked id="slider1" name="toggle" type="radio">
-    <input id="slider2" name="toggle" type="radio">
-    <input id="slider3" name="toggle" type="radio">
-    <div>
+  <div class="slider">
+    <input  class="visually-hidden" checked id="slider1" name="toggle" type="radio">
+    <input class="visually-hidden" id="slider2" name="toggle" type="radio">
+    <input class="visually-hidden" id="slider3" name="toggle" type="radio">
+    <div class="slider_label">
       <label for="slider1"></label>
       <label for="slider2"></label>
       <label for="slider3"></label>
     </div>
-    <div>
-      <div>
+    <div class="slider_content">
+      <div class="slider_item">
         <img alt="Самая длинная селфи палка" height="486" src="img/slider_1.png" width="384">
-        <span>01</span>
-        <h2>Делай селфи, как Бен Стиллер!</h2>
-        <p>Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего
+        <span class="slider_number">01</span>
+        <h2 class="slider_header">Делай селфи, как Бен Стиллер!</h2>
+        <p class="slider_text">Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего
           5 килограмм.</p>
-        <a href="#">Подробнее</a>
-        <dl>
+        <a class="button slider_button" href="#">Подробнее</a>
+        <dl class="characteristic">
           <dd>8,5 м</dd>
           <dt>Длина палки</dt>
           <dd>5 кг</dd>
@@ -142,26 +141,26 @@
         </dl>
       </div>
 
-      <div>
+      <div  class="slider_item">
         <img alt="Самая длинная селфи палка" height="483" src="img/slider_2.png" width="345">
-        <span>02</span>
-        <h2>Худеем правильно!</h2>
-        <p>Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>
-        <a href="#">Подробнее</a>
-        <dl>
+        <span class="slider_number">02</span>
+        <h2 class="slider_header">Худеем правильно!</h2>
+        <p class="slider_text">Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>
+        <a class="button slider_button" href="#">Подробнее</a>
+        <dl class="characteristic">
           <dd>48 часов</dd>
           <dt>Без подзарядки</dt>
         </dl>
       </div>
 
-      <div>
+      <div  class="slider_item">
         <img alt="Самая длинная селфи палка" height="334" src="img/slider_3.png" width="526">
-        <span>03</span>
-        <h2>Порхает как бабочка, жалит как пчела!</h2>
-        <p>Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.
+        <span class="slider_number">03</span>
+        <h2 class="slider_header">Порхает как бабочка, жалит как пчела!</h2>
+        <p class="slider_text">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.
         </p>
-        <a href="#">Подробнее</a>
-        <dl>
+        <a class="button slider_button" href="#">Подробнее</a>
+        <dl class="characteristic">
           <dd>800 м</dd>
           <dt>Дальность полета</dt>
           <dd>50 м</dd>
@@ -172,60 +171,60 @@
     </div>
   </div>
 
-  <ul>
-    <li>
-      <a href="">
-        <div>
+  <ul class="division_list">
+    <li class="division_item">
+      <a class="division_link" href="">
+        <div class="division_img">
           <svg width="97" height="55">
             <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#popular-1"></use>
           </svg>
         </div>
-        <h3>Виртуальная реальность</h3>
+        <h3 class="division_header">Виртуальная реальность</h3>
       </a>
     </li>
-    <li>
-      <a href="">
-        <div>
+    <li class="division_item">
+      <a class="division_link" href="">
+        <div class="division_img">
           <svg width="86" height="117">
             <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#popular-2"></use>
           </svg>
         </div>
-        <h3>Моноподы для селфи</h3>
+        <h3 class="division_header">Моноподы для селфи</h3>
       </a>
     </li>
-    <li>
-      <a href="">
-        <div>
+    <li class="division_item">
+      <a class="division_link" href="">
+        <div class="division_img">
           <svg width="71" height="87">
             <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#popular-3"></use>
           </svg>
         </div>
-        <h3>Экшн-камеры</h3>
+        <h3 class="division_header">Экшн-камеры</h3>
       </a>
     </li>
-    <li>
-      <a href="">
-        <div>
+    <li class="division_item">
+      <a class="division_link" href="">
+        <div class="division_img">
           <svg width="107" height="65">
             <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#popular-4"></use>
           </svg>
         </div>
-        <h3>Фитнес-браслеты</h3>
+        <h3 class="division_header">Фитнес-браслеты</h3>
       </a>
     </li>
-    <li>
-      <a href="">
-        <div>
+    <li class="division_item">
+      <a class="division_link" href="">
+        <div class="division_img">
           <svg width="56" height="98">
             <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#popular-5"></use>
           </svg>
         </div>
-        <h3>Умные часы</h3>
+        <h3 class="division_header">Умные часы</h3>
       </a>
     </li>
-    <li>
-      <a href="">
-        <div>
+    <li class="division_item">
+      <a class="division_link" href="">
+        <div class="division_img">
           <svg width="132" height="69">
             <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#popular-6"></use>
           </svg>
@@ -235,164 +234,169 @@
     </li>
   </ul>
 
-  <div>
-    <input checked="" id="btn-1" name="btn" type="radio">
-    <input id="btn-2" name="btn" type="radio">
-    <input id="btn-3" name="btn" type="radio">
-    <div>
-      <label for="btn-1">Доставка</label>
-      <label for="btn-2">Гарантия</label>
-      <label for="btn-3">Кредит</label>
-    </div>
-    <div>
-      <div>
-        <h2>Доставка</h2>
-        <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо
-          заработаем, поднимая его на ваш этаж.
-        </p>
+  <div class="services">
+    <div class="wrap">
+      <input class="visually-hidden" id="btn-1" name="btn" type="radio" checked>
+      <input class="visually-hidden" id="btn-2" name="btn" type="radio">
+      <input class="visually-hidden" id="btn-3" name="btn" type="radio">
+      <div class="services_menu">
+        <label class="button services_button" for="btn-1">Доставка</label>
+        <label  class="button services_button" for="btn-2">Гарантия</label>
+        <label  class="button services_button" for="btn-3">Кредит</label>
       </div>
-      <div>
-        <h2>Гарантия</h2>
-        <p>Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый.
-          Товар, не дом, конечно же.
-        </p>
-      </div>
-      <div>
-        <h2>Кредит</h2>
-        <p>Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия
-          кредита. Выгодные для нашего банка, разумеется.</p>
+      <div class="services_description">
+        <div class="services_item delivery">
+          <h2 class="services_header">Доставка</h2>
+          <p class="services_text">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо
+            заработаем, поднимая его на ваш этаж.
+          </p>
+        </div>
+        <div class="services_item guarantee">
+          <h2 class="services_header">Гарантия</h2>
+          <p class="services_text">Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый.
+            Товар, не дом, конечно же.
+          </p>
+        </div>
+        <div class="services_item credit">
+          <h2 class="services_header">Кредит</h2>
+          <p class="services_text">Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия
+            кредита. Выгодные для нашего банка, разумеется.</p>
+        </div>
       </div>
     </div>
   </div>
 
-  <ul>
-    <li>
-      <a href="">
-        <img alt="Наши партнеры" height="100" src="img/logo_1.png" width="260">
-        <img alt="Наши партнеры" height="100" src="img/logo_1_1.png" width="260">
+  <ul class="partners">
+    <li class="partners_item">
+      <a class="partners_link" href="">
+        <img class="partners_logo_grey" alt="Наши партнеры" height="100" src="img/logo_1.png" width="260">
+        <img class="partners_logo" alt="Наши партнеры" height="100" src="img/logo_1_1.png" width="260">
       </a>
     </li>
-    <li>
-      <a href="">
-        <img alt="Наши партнеры" height="100" src="img/logo_2.png" width="260">
-        <img alt="Наши партнеры" height="100" src="img/logo_2_1.png" width="260">
+    <li class="partners_item">
+      <a class="partners_link" href="">
+        <img class="partners_logo_grey" alt="Наши партнеры" height="100" src="img/logo_2.png" width="260">
+        <img class="partners_logo" alt="Наши партнеры" height="100" src="img/logo_2_1.png" width="260">
       </a>
     </li>
-    <li>
-      <a href="">
-        <img alt="Наши партнеры" height="100" src="img/logo_3.png" width="260">
-        <img alt="Наши партнеры" height="100" src="img/logo_3_1.png" width="260">
+    <li class="partners_item">
+      <a class="partners_link" href="">
+        <img class="partners_logo_grey" alt="Наши партнеры" height="100" src="img/logo_3.png" width="260">
+        <img class="partners_logo" alt="Наши партнеры" height="100" src="img/logo_3_1.png" width="260">
       </a>
     </li>
-    <li>
-      <a href="">
-        <img alt="Наши партнеры" height="100" src="img/logo_4.png" width="260">
-        <img alt="Наши партнеры" height="100" src="img/logo_4_1.png" width="260">
+    <li class="partners_item">
+      <a class="partners_link" href="">
+        <img class="partners_logo_grey" alt="Наши партнеры" height="100" src="img/logo_4.png" width="260">
+        <img class="partners_logo" alt="Наши партнеры" height="100" src="img/logo_4_1.png" width="260">
       </a>
     </li>
   </ul>
 
-  <div>
-    <section>
-      <h2>О нас</h2>
+  <div class="wrap">
+    <section class="about">
+      <h2 class="about_header">О нас</h2>
       <p>Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
       <p>Мы можем доставить ваш товар в самые отдаленные точки России! DEVICE работает со многими транспортными
         компаниями:</p>
-      <ul>
-        <li>Деловые линии</li>
-        <li>Автотрейдинг</li>
-        <li>ЖелДорЭкспедиция</li>
+      <ul class="about_list">
+        <li class="about_item">Деловые линии</li>
+        <li  class="about_item">Автотрейдинг</li>
+        <li  class="about_item">ЖелДорЭкспедиция</li>
       </ul>
-      <a href="">подробнее о нас</a>
+      <a class="button" href="">подробнее о нас</a>
     </section>
 
-    <section>
-      <h2>Контакты</h2>
+    <section class="contact">
+      <h2 class="contact_header">Контакты</h2>
       <p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое
         бывает.</p>
       <a href="">
         <img alt="Адрес магазина Device" src="img/map.jpg">
       </a>
-      <a href="">напишите нам</a>
+      <a class="button" href="">напишите нам</a>
     </section>
   </div>
 
 </main>
-<footer>
-  <div>
-    <a href="">
-      <svg width="163" height="35">
-        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#logo"></use>
-      </svg>
-    </a>
-    <p>г. Москва, ул. Строителей, 15</p>
-  </div>
-  <div>
-    <ul>
-      <li><a href="">Доставка</a></li>
-      <li><a href="">Гарантия</a></li>
-      <li><a href="">Контакты</a></li>
-    </ul>
+<footer class="footer">
+  <div class="wrap">
+    <div class="footer_info">
+      <a class="footer_logo" href="">
+        <svg width="163" height="35">
+          <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#logo"></use>
+        </svg>
+      </a>
+      <p>г. Москва, ул. Строителей, 15</p>
+    </div>
+    <div class="footer_nav">
+      <ul class="footer-menu_list">
+        <li class="footer-menu_item"><a href="">Доставка</a></li>
+        <li class="footer-menu_item"><a href="">Гарантия</a></li>
+        <li class="footer-menu_item"><a href="">Контакты</a></li>
+      </ul>
 
-    <ul>
-      <li>
-        <a href="">
-          <svg width="32" height="32">
-            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#facebook"></use>
-          </svg>
-          <span class="visually-hidden">Facebook</span>
-        </a>
-      </li>
-      <li>
-        <a href="">
-          <svg width="32" height="32">
-            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#instagram"></use>
-          </svg>
-          <span class="visually-hidden">Instagram</span>
-        </a>
-      </li>
-      <li>
-        <a href="">
-          <svg width="32" height="32">
-            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#twitter"></use>
-          </svg>
-          <span class="visually-hidden">Twitter</span>
-        </a>
-      </li>
-    </ul>
-  </div>
-  <div>
+      <ul class="social_list">
+        <li class="social_item">
+          <a href="">
+            <svg width="32" height="32">
+              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#facebook"></use>
+            </svg>
+            <span class="visually-hidden">Facebook</span>
+          </a>
+        </li>
+        <li class="social_item">
+          <a href="">
+            <svg width="32" height="32">
+              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#instagram"></use>
+            </svg>
+            <span class="visually-hidden">Instagram</span>
+          </a>
+        </li>
+        <li class="social_item">
+          <a href="">
+            <svg width="32" height="32">
+              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#twitter"></use>
+            </svg>
+            <span class="visually-hidden">Twitter</span>
+          </a>
+        </li>
+      </ul>
+    </div>
     <div>
-      <a href="">
-        <svg width="13" height="14">
-          <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#user"></use>
+      <div class="footer_personal">
+        <a class="footer_personal_item" href="">
+          <svg width="13" height="14">
+            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#user"></use>
+          </svg>
+          Войти
+        </a>
+        <a  class="footer_personal_item" href="">
+          <svg width="14" height="14">
+            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#chart"></use>
+          </svg>
+          Сравнить
+        </a>
+        <a  class="footer_personal_item" href="">
+          <svg width="10" height="10">
+            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#cart"></use>
+          </svg>
+          Корзина
+        </a>
+      </div>
+      <p class="footer_tel">Тел.: <a href="tel:+74954959595">+7 (495) 495-95-95</a></p>
+      <a class="footer_copyright" href="https://htmlacademy.ru/intensive/htmlcss">
+        <svg width="27" height="34">
+          <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#logo-html"></use>
         </svg>
-        Войти
-      </a>
-      <a href="">
-        <svg width="14" height="14">
-          <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#chart"></use>
-        </svg>
-        Сравнить
-      </a>
-      <a href="">
-        <svg width="10" height="10">
-          <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#cart"></use>
-        </svg>
-        Корзина
+        <span class="visually-hidden">HTML Academy</span>
       </a>
     </div>
-    <p>Тел.: <a href="tel:+74954959595">+7 (495) 495-95-95</a></p>
-    <a href="https://htmlacademy.ru/intensive/htmlcss">
-      <svg width="27" height="34">
-        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#logo-html"></use>
-      </svg>
-      <span class="visually-hidden">HTML Academy</span>
-    </a>
   </div>
+
 </footer>
 
-<div>
+<div class="contact-form">
   <form action="">
     <div>
       <label for="name">Ваше имя:</label>

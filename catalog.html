@@ -41,79 +41,84 @@
       <path d="M11 0H0l5.5 10L11 0z"/>
     </symbol>
   </svg>
-  <header>
-    <a href="">
+  <header class="header">
+    <a class="header_logo" href="#">
       <svg width="163" height="35">
         <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#logo"></use>
       </svg>
     </a>
-    <div>
+    <div class="header_personal">
       <form  action="https://echo.htmlacademy.ru" method="post">
         <label for="search1">
           <svg width="16" height="16">
             <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#search"></use>
           </svg>
         </label>
-        <input type="search" id="search1" name="search" placeholder="Поиск">
-        <button type="submit">Найти</button>
+        <input id="search1" name="search" placeholder="Поиск" type="search">
+        <button class="button_search" type="submit">Найти</button>
       </form>
-      <a href="">
+      <a class="header_personal_item" href="">
         <svg width="13" height="14">
           <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#user"></use>
         </svg>
         Валентин Петухов
       </a>
-      <a href="">Выйти</a>
-      <a href="">
+      <a class="header_personal_item" href="">Выйти</a>
+      <a class="header_personal_item" href="">
         <svg width="14" height="14">
           <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#chart"></use>
         </svg>
         Сравнить
       </a>
-      <a href="">
+      <a class="header_personal_item" href="">
         <svg width="10" height="10">
           <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#cart"></use>
         </svg>
         Корзина
       </a>
     </div>
-    <nav>
-      <ul>
-        <li><a href="catalog.html">Каталог</a>
-          <ul>
-            <li><a href="">Виртуальная реальность</a></li>
-            <li><a href="">Моноподы для селфи</a></li>
-            <li><a href="">Экшн-камеры</a></li>
-            <li><a href="">Фитнес-браслеты</a></li>
-            <li><a href="">Умные часы</a></li>
-            <li><a href="">Квадрокоптер</a></li>
+    <nav class="header-menu">
+      <ul class="header-menu_list">
+        <li class="header-menu_item"><a href="catalog.html">Каталог</a>
+          <ul class="submenu_list">
+            <li class="submenu_item"><a href="">Виртуальная реальность</a></li>
+            <li class="submenu_item"><a href="">Моноподы для селфи</a></li>
+            <li class="submenu_item"><a href="">Экшн-камеры</a></li>
+            <li class="submenu_item"><a href="">Фитнес-браслеты</a></li>
+            <li class="submenu_item"><a href="">Умные часы</a></li>
+            <li class="submenu_item"><a href="">Квадрокоптер</a></li>
           </ul>
         </li>
-        <li><a href="">Доставка</a></li>
-        <li><a href="">Гарантия</a></li>
-        <li><a href="">Контакты</a></li>
+        <li class="header-menu_item"><a href="">Доставка</a></li>
+        <li class="header-menu_item"><a href="">Гарантия</a></li>
+        <li class="header-menu_item"><a href="">Контакты</a></li>
       </ul>
     </nav>
   </header>
+
   <main>
-    <h1>Моноподы для селфи</h1>
-    <ul>
-      <li>
-        <a href="index.html">Главная</a>
-      </li>
-      <li>
-        <a href="catalog.html">Каталог товаров</a>
-      </li>
-      <li>
-        Моноподы для селфи
-      </li>
-    </ul>
-    <section>
-      <h2>Фильтр:</h2>
+    <div class="wrap">
+      <h1 class="main_header">Моноподы для селфи</h1>
+      <ul class="breadcrumbs">
+        <li class="breadcrumbs_item">
+          <a href="index.html">Главная</a>
+        </li>
+        <li class="breadcrumbs_item">
+          <a href="catalog.html">Каталог товаров</a>
+        </li>
+        <li class="breadcrumbs_item">
+          Моноподы для селфи
+        </li>
+      </ul>
+    </div>
+
+    <section class="filter">
+
+      <h2 class="filter_header">Фильтр:</h2>
 
       <form  action="https://echo.htmlacademy.ru" method="post">
-        <section>
-          <h3>Стоимость</h3>
+        <section class="filter_price">
+          <h3 class="filter_section-header">Стоимость</h3>
           <div>
             <label for="min"></label>
             <input type="hidden" id="min" name="min" value="0">
@@ -123,53 +128,53 @@
         </section>
 
         <section>
-          <h3>Цвет</h3>
-          <div>
-            <input type="checkbox" id="colorChoice1" name="color" value="black" checked>
-            <label for="colorChoice1">Черный</label>
+          <h3 class="filter_section-header">Цвет</h3>
+          <div class="filter_color">
+            <input class="checkbox" type="checkbox" id="colorChoice1" name="color" value="black" checked>
+            <label class="filter_label" for="colorChoice1">Черный</label>
 
-            <input type="checkbox" id="colorChoice2" name="color" value="white">
-            <label for="colorChoice2">Белый</label>
+            <input class="checkbox" type="checkbox" id="colorChoice2" name="color" value="white">
+            <label class="filter_label" for="colorChoice2">Белый</label>
 
-            <input type="checkbox" id="colorChoice3" name="color" value="blue" checked>
-            <label for="colorChoice3">Синий</label>
+            <input class="checkbox" type="checkbox" id="colorChoice3" name="color" value="blue" checked>
+            <label class="filter_label" for="colorChoice3">Синий</label>
 
-            <input type="checkbox" id="colorChoice4" name="color" value="red" checked>
-            <label for="colorChoice4">Красный</label>
+            <input class="checkbox" type="checkbox" id="colorChoice4" name="color" value="red" checked>
+            <label class="filter_label" for="colorChoice4">Красный</label>
 
-            <input type="checkbox" id="colorChoice5" name="color" value="pink">
-            <label for="colorChoice5">Розовый</label>
+            <input class="checkbox" type="checkbox" id="colorChoice5" name="color" value="pink">
+            <label class="filter_label" for="colorChoice5">Розовый</label>
           </div>
         </section>
 
         <section>
-          <h3>Bluetooth</h3>
-          <div>
-            <input type="radio" id="bluetoothChoice1" name="bluetooth" value="yes" checked>
-            <label for="bluetoothChoice1">Есть</label>
+          <h3 class="filter_section-header">Bluetooth</h3>
+          <div  class="filter_bluetooth">
+            <input class="radiobutton" type="radio" id="bluetoothChoice1" name="bluetooth" value="yes" checked>
+            <label class="radio-label" for="bluetoothChoice1">Есть</label>
 
-            <input type="radio" id="bluetoothChoice2" name="bluetooth" value="no">
-            <label for="bluetoothChoice2">Нет</label>
+            <input class="radiobutton" type="radio" id="bluetoothChoice2" name="bluetooth" value="no">
+            <label class="radio-label" for="bluetoothChoice2">Нет</label>
           </div>
         </section>
-        <button type="submit">Показать</button>
+        <button class="filter_button" type="submit">Показать</button>
       </form>
     </section>
 
-    <section>
-      <h2>Сортировка:</h2>
-      <div>
-        <a href="#">По цене</a>
+    <section class="sort">
+      <h2 class="sort_header">Сортировка:</h2>
+      <div class="sort_value">
+        <a class="sort_active" href="#">По цене</a>
         <a href="#">По типу</a>
         <a href="#">По популярности</a>
       </div>
-      <div>
-        <a href="#">
+      <div class="sort_arrow">
+        <a class="sort_arrow_top" href="#">
           <svg width="11" height="10">
             <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#arrow"></use>
           </svg>
         </a>
-        <a href="#">
+        <a class="sort_arrow_bottom sort_active" href="#">
           <svg width="11" height="10">
             <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#arrow"></use>
           </svg>
@@ -177,137 +182,141 @@
       </div>
     </section>
 
-    <section>
-      <h2>Список моноподов для селфи</h2>
-      <ul>
-        <li>
-          <div>
+    <section class="good">
+      <h2 class="visually-hidden">Список моноподов для селфи</h2>
+      <ul class="good_list">
+        <li class="good_item">
+          <div class="good_img">
             <img src="img/item_1_1.jpg" width="360" height="380" alt="Любительская селфи-палка">
           </div>
-          <div>
-            <a href="">В корзину</a>
-            <a href="">Добавить к сравнению</a>
+          <div class="good_insert">
+            <a class="button good_cart" href="">В корзину</a>
+            <a class="good_chart" href="">Добавить к сравнению</a>
           </div>
-          <a href=""><h3>Любительская селфи-палка</h3></a>
-          <p>500 руб.</p>
+          <a  class="good_item_header" href=""><h3>Любительская селфи-палка</h3></a>
+          <p class="good_price">500 руб.</p>
         </li>
-        <li>
-          <div>
-            <img src="img/item_2_1.jpg" width="360" height="380" alt="Профессиональная селфи-палка ">
+        <li class="good_item">
+          <div class="good_img">
+            <img src="img/item_2_1.jpg" width="360" height="380" alt="Любительская селфи-палка">
           </div>
-          <div>
-            <a href="">В корзину</a>
-            <a href="">Добавить к сравнению</a>
+          <div class="good_insert">
+            <a class="button good_cart" href="">В корзину</a>
+            <a class="good_chart" href="">Добавить к сравнению</a>
           </div>
-          <a href=""><h3>Профессиональная селфи-палка </h3></a>
-          <p>1500 руб.</p>
+          <a  class="good_item_header" href=""><h3>Профессиональная селфи-палка</h3></a>
+          <p class="good_price">1500 руб.</p>
         </li>
-        <li>
-          <div>
-            <img src="img/item_3_1.jpg" width="360" height="380" alt="Непотопляемая селфи-палка">
+        <li class="good_item">
+          <div class="good_img">
+            <img src="img/item_3_1.jpg" width="360" height="380" alt="Любительская селфи-палка">
           </div>
-          <div>
-            <a href="">В корзину</a>
-            <a href="">Добавить к сравнению</a>
+          <div class="good_insert">
+            <a class="button good_cart" href="">В корзину</a>
+            <a class="good_chart" href="">Добавить к сравнению</a>
           </div>
-          <a href=""><h3>Непотопляемая селфи-палка</h3></a>
-          <p>2500 руб.</p>
+          <a  class="good_item_header" href=""><h3>Непотопляемая селфи-палка</h3></a>
+          <p class="good_price">2500 руб.</p>
         </li>
-        <li>
-          <div>
-            <span>new</span>
-            <img src="img/item_4_1.jpg" width="360" height="380" alt="Селфи-палка «Следуй за мной»">
+        <li class="good_item">
+          <div class="good_new">new</div>
+          <div class="good_img">
+            <img src="img/item_4_1.jpg" width="360" height="380" alt="Любительская селфи-палка">
           </div>
-          <div>
-            <a href="">В корзину</a>
-            <a href="">Добавить к сравнению</a>
+          <div class="good_insert">
+            <a class="button good_cart" href="">В корзину</a>
+            <a class="good_chart" href="">Добавить к сравнению</a>
           </div>
-          <a href=""><h3>Селфи-палка «Следуй за мной»</h3></a>
-          <p>4900 руб.</p>
+          <a  class="good_item_header" href=""><h3>Селфи-палка «Следуй за мной»</h3></a>
+          <p class="good_price">4900 руб.</p>
         </li>
       </ul>
     </section>
-    <div>
-      <span>Назад</span>
-      <span>1</span>
+    <div class="paginator">
+      <span class="paginator_button">Назад</span>
+      <span  class="paginator_active">1</span>
       <a href="#">2</a>
       <a href="#">3</a>
-      <a href="#">Вперед</a>
+      <a class="paginator_button" href="#">Вперед</a>
     </div>
   </main>
-  <footer>
-    <div>
-      <a href="">
-        <svg width="163" height="35">
-          <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#logo"></use>
-        </svg>
-      </a>
-      <p>г. Москва, ул. Строителей, 15</p>
-    </div>
-    <div>
-      <ul>
-        <li><a href="">Доставка</a></li>
-        <li><a href="">Гарантия</a></li>
-        <li><a href="">Контакты</a></li>
-      </ul>
 
-      <ul>
-        <li>
-          <a href="">
-            <svg width="32" height="32">
-              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#facebook"></use>
-            </svg>
-            <span class="visually-hidden">Facebook</span>
-          </a>
-        </li>
-        <li>
-          <a href="">
-            <svg width="32" height="32">
-              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#instagram"></use>
-            </svg>
-            <span class="visually-hidden">Instagram</span>
-          </a>
-        </li>
-        <li>
-          <a href="">
-            <svg width="32" height="32">
-              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#twitter"></use>
-            </svg>
-            <span class="visually-hidden">Twitter</span>
-          </a>
-        </li>
-      </ul>
-    </div>
-    <div>
+  <footer class="footer">
+    <div class="wrap">
+      <div class="footer_info">
+        <a class="footer_logo" href="">
+          <svg width="163" height="35">
+            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#logo"></use>
+          </svg>
+        </a>
+        <p>г. Москва, ул. Строителей, 15</p>
+      </div>
+      <div class="footer_nav">
+        <ul class="footer-menu_list">
+          <li class="footer-menu_item"><a href="">Доставка</a></li>
+          <li class="footer-menu_item"><a href="">Гарантия</a></li>
+          <li class="footer-menu_item"><a href="">Контакты</a></li>
+        </ul>
+
+        <ul class="social_list">
+          <li class="social_item">
+            <a href="">
+              <svg width="32" height="32">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#facebook"></use>
+              </svg>
+              <span class="visually-hidden">Facebook</span>
+            </a>
+          </li>
+          <li class="social_item">
+            <a href="">
+              <svg width="32" height="32">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#instagram"></use>
+              </svg>
+              <span class="visually-hidden">Instagram</span>
+            </a>
+          </li>
+          <li class="social_item">
+            <a href="">
+              <svg width="32" height="32">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#twitter"></use>
+              </svg>
+              <span class="visually-hidden">Twitter</span>
+            </a>
+          </li>
+        </ul>
+      </div>
       <div>
-        <a href="">
-          <svg width="13" height="14">
-            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#user"></use>
+        <div class="footer_personal">
+          <a class="footer_personal_item" href="">
+            <svg width="13" height="14">
+              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#user"></use>
+            </svg>
+            Валентин Петухов
+          </a>
+          <a class="footer_personal_item" href="">Выйти</a>
+          <a  class="footer_personal_item" href="">
+            <svg width="14" height="14">
+              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#chart"></use>
+            </svg>
+            Сравнить
+          </a>
+          <a  class="footer_personal_item" href="">
+            <svg width="10" height="10">
+              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#cart"></use>
+            </svg>
+            Корзина
+          </a>
+        </div>
+        <p class="footer_tel">Тел.: <a href="tel:+74954959595">+7 (495) 495-95-95</a></p>
+        <a class="footer_copyright" href="https://htmlacademy.ru/intensive/htmlcss">
+          <svg width="27" height="34">
+            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#logo-html"></use>
           </svg>
-          Валентин Петухов
-        </a>
-        <a href="">Выйти</a>
-        <a href="">
-          <svg width="14" height="14">
-            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#chart"></use>
-          </svg>
-          Сравнить
-        </a>
-        <a href="">
-          <svg width="10" height="10">
-            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#cart"></use>
-          </svg>
-          Корзина
+          <span class="visually-hidden">HTML Academy</span>
         </a>
       </div>
-      <p>Тел.: <a href="tel:+74954959595">+7 (495) 495-95-95</a></p>
-      <a href="https://htmlacademy.ru/intensive/htmlcss">
-        <svg width="27" height="34">
-          <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#logo-html"></use>
-        </svg>
-        <span class="visually-hidden">HTML Academy</span>
-      </a>
     </div>
   </footer>
+
   </body>
 </html>
