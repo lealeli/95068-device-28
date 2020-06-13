@@ -94,7 +94,7 @@ img {
 .header_personal {
   display: grid;
   grid-template-columns: 540px auto 117px 100px;
-  margin-top: 18px;
+  margin-top: 10px;
   margin-left: 60px;
   margin-right: 60px;
   height: 100%;
@@ -114,6 +114,17 @@ img {
 
 .header_logo:focus {
   opacity: 0.3;
+}
+
+.header_personal_item {
+  position: relative;
+  padding-left: 23px;
+}
+
+.header_personal_item svg{
+  position: absolute;
+  top: 4px;
+  left: 0;
 }
 
 .header_personal_item:last-child {
@@ -218,10 +229,6 @@ img {
   background: linear-gradient(180deg, var(--special-yellow) 125px, var(--basic-white) 125px, var(--basic-white) 535px);
 }
 
-.slider_item {
-  display: none;
-}
-
 .slider_img {
   margin: 0 auto;
 }
@@ -250,19 +257,7 @@ img {
   box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
 }
 
-#slider1:checked ~ .slider_content .slider_item:nth-child(1) {
-  display: grid;
-  grid-template-columns: 600px 560px;
-  padding-top: 40px;
-}
-
-#slider2:checked ~ .slider_content .slider_item:nth-child(2) {
-  display: grid;
-  grid-template-columns: 600px 560px;
-  padding-top: 40px;
-}
-
-#slider3:checked ~ .slider_content .slider_item:nth-child(3) {
+.slider_item {
   display: grid;
   grid-template-columns: 600px 560px;
   padding-top: 40px;
@@ -641,7 +636,7 @@ img {
   line-height: 50px;
   color: var(--basic-black);
   opacity: 0.3;
-  padding-left: 40px;
+  padding-left: 37px;
   height: 50px;
 }
 

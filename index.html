@@ -117,9 +117,9 @@
 <main>
   <h1 class="visually-hidden">Интернет-магазин гаджетов Device</h1>
   <div class="wrap slider">
-    <input  class="visually-hidden" checked id="slider1" name="toggle" type="radio">
-    <input class="visually-hidden" id="slider2" name="toggle" type="radio">
-    <input class="visually-hidden" id="slider3" name="toggle" type="radio">
+    <input  class="visually-hidden" checked id="slider1" data-num="1" name="toggle" type="radio">
+    <input class="visually-hidden" id="slider2" data-num="2" name="toggle" type="radio">
+    <input class="visually-hidden" id="slider3" data-num="3" name="toggle" type="radio">
     <div class="slider_label">
       <label for="slider1"></label>
       <label for="slider2"></label>
@@ -146,7 +146,7 @@
         </div>
       </div>
 
-      <div  class="slider_item">
+      <div  class="slider_item visually-hidden">
         <div class="slider_img">
           <img alt="Самая длинная селфи палка" height="483" src="img/slider_2.png" width="345">
         </div>
@@ -161,7 +161,7 @@
         </div>
       </div>
 
-      <div  class="slider_item">
+      <div  class="slider_item visually-hidden">
         <div class="slider_img">
           <img alt="Самая длинная селфи палка" height="334" src="img/slider_3.png" width="526">
         </div>
@@ -421,6 +421,8 @@
     <div><button type="submit">Отправить</button></div>
   </form>
 </div>
+
+<script src="js/script.js"></script>
 
 </body>
 </html>
