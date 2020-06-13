@@ -52,6 +52,10 @@
   url("../fonts/opensans.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 
+.body {
+  counter-reset: section;
+}
+
 a {
   text-decoration: none;
   color: var(--basic-black);
@@ -276,9 +280,6 @@ img {
   background-color: white;
   box-sizing: border-box;
 }
-.slider_content {
-  counter-reset: slider_counter;
-}
 
 .slider_content_wrap {
   position: relative;
@@ -304,8 +305,8 @@ img {
   top: 0;
   right: 40px;
   margin-top: -18px;
-  counter-increment: slider_counter;
-  content: "0" counter(slider_counter);
+  counter-increment: section;
+  content: "0" counter(section);
 }
 
 .slider_header {
