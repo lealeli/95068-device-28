@@ -276,6 +276,9 @@ img {
   background-color: white;
   box-sizing: border-box;
 }
+.slider_content {
+  counter-reset: slider_counter;
+}
 
 .slider_content_wrap {
   position: relative;
@@ -289,7 +292,7 @@ img {
   background-color: var(--basic-white);
 }
 
-.slider_number {
+.slider_item::before {
   font-family: "Gilroy", Arial, sans-serif;
   font-style: normal;
   font-weight: 800;
@@ -300,7 +303,9 @@ img {
   position: absolute;
   top: 0;
   right: 40px;
-  margin-top: -56px;
+  margin-top: -18px;
+  counter-increment: slider_counter;
+  content: "0" counter(slider_counter);
 }
 
 .slider_header {
