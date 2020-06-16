@@ -722,7 +722,7 @@ h3.division_header_big {
 }
 
 .modal-top input {
-  width: 100%;
+  width: 340px;
   height: 50px;
   background-color: var(--basic-grey-half-light);
   border: 0;
@@ -803,8 +803,8 @@ textarea.modal-error {
 .close {
   position: absolute;
   z-index: 23;
-  top: 32px;
-  right: 36px;
+  top: 13px;
+  right: 20px;
   width: 55px;
   height: 55px;
   cursor: pointer;
@@ -1678,7 +1678,7 @@ a.footer_personal_item-out {
 .contact-form {
   width: 760px;
   height: 408px;
-  padding: 92px 100px 50px 100px;
+  padding: 86px 100px 50px 100px;
   background-color: var(--basic-white);
 }
 
@@ -1689,17 +1689,15 @@ a.footer_personal_item-out {
 }
 
 .contact-form_name {
-  width: 340px;
-  padding-right: 40px;
+  margin-right: 40px;
   padding-bottom: 32px;
 }
 
 .contact-form_email {
-  width: 340px;
   padding-bottom: 32px;
 }
 
 .contact-form_text {
-  width: 740px;
-  padding-bottom: 32px;
+  width: 760px;
+  padding-bottom: 40px;
 }
