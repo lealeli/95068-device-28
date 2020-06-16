@@ -1,6 +1,7 @@
 :root {
   --basic-black: #000000;
   --bacik-black-transpery: rgba(0, 0, 0, 0.3);
+  --bacik-black-transpery-6: rgba(0, 0, 0, 0.6);
   --bacik-black-transpery-light: #C4C4C4;
   --basic-dark: #363636;
   --basic-white: #ffffff;
@@ -146,7 +147,7 @@ a.header_personal_item-out {
 }
 
 .header-menu {
-  padding: 35px 60px 35px 60px;
+  padding: 35px 60px 34px 60px;
   position: relative;
 }
 
@@ -194,7 +195,7 @@ nav.header-menu_catalog {
 }
 
 .header-menu_item a:hover {
-  opacity: 0.6;
+  color: var(--bacik-black-transpery-6);
 }
 
 .header-menu_item a:focus {
@@ -203,15 +204,17 @@ nav.header-menu_catalog {
 
 .submenu_list {
   list-style: none;
-  display: none;
   position: absolute;
+  left: 0;
+  z-index: 100;
+  display: none;
   width: 1100px;
   background-color: var(--special-yellow);
-  top: 53px;
-  left: 0;
   margin: 0;
-  padding: 33px 0 28px 60px;
-  z-index: 5;
+  padding: 30px 0 26px 60px;
+  grid-template-columns: max-content max-content max-content;
+  grid-template-rows: 36px 36px 36px;
+  grid-auto-flow: column;
 }
 
 .submenu_item {
@@ -232,9 +235,6 @@ nav.header-menu_catalog {
 
 .header-menu_item:first-child:hover .submenu_list {
   display: grid;
-  grid-template-columns: max-content max-content max-content;
-  grid-template-rows: 36px 36px 36px;
-  grid-auto-flow: column;
 }
 
 .submenu_list:hover {
@@ -272,7 +272,6 @@ nav.header-menu_catalog {
   border-radius: 50%;
   background-color: white;
   box-sizing: border-box;
-  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .slider_item {
@@ -854,7 +853,7 @@ textarea.modal-error {
 }
 
 .search_text[placeholder]:hover {
-  opacity:0.6
+  color: var(--bacik-black-transpery-6);
 }
 
 .search_text:focus {
@@ -876,12 +875,14 @@ textarea.modal-error {
   padding: 0 15px;
   text-transform: uppercase;
   background-color: var(--special-yellow);
-  border:2px solid var(--basic-black)
+  border:2px solid var(--basic-black);
+  outline: none;
 }
 
 .button_search:hover {
   background-color: var(--basic-black);
   color: var(--basic-white);
+  display: block;
 }
 
 .button_search:focus {
