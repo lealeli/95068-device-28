@@ -1,14 +1,14 @@
 :root {
-  --basic-black: #000000;
+  --basic-black: rgb(0, 0, 0);
   --bacik-black-transpery: rgba(0, 0, 0, 0.3);
   --bacik-black-transpery-6: rgba(0, 0, 0, 0.6);
   --bacik-black-transpery-light: #C4C4C4;
-  --basic-dark: #363636;
-  --basic-white: #ffffff;
+  --basic-dark: rgb(54, 54, 54);
+  --basic-white: rgb(255, 255, 255);
   --basic-white-transpery: rgba(256, 256, 256, 0.3);
-  --basic-grey: #464646;
-  --basic-half-grey: #7E7E7E;
-  --basic-grey-light: #e5e5e5;
+  --basic-grey: rgb(70, 70, 70);
+  --basic-half-grey: rgb(126, 126, 126);
+  --basic-grey-light: rgba(229, 229, 229, 1);
   --basic-grey-light-transpery: rgba(238, 238, 238, 0.7);
   --basic-grey-half: #EAEAEA;
   --basic-grey-half-light: #F2F2F2;
@@ -293,6 +293,7 @@ div.slider_img_second {
 #slider3:checked ~ .slider_label label[for="slider3"]::after {
   content: "";
   display: inline-block;
+  vertical-align: middle;
   width: 6px;
   height: 6px;
   border: 1px solid var(--basic-black);
@@ -500,14 +501,17 @@ a.slider_button {
 }
 
 .characteristic {
+  list-style: none;
   display: grid;
   grid-template-columns: max-content max-content max-content;
-  grid-template-rows: auto auto;
+  grid-template-rows: auto;
   grid-auto-flow: column;
   margin: 53px 0 0 0;
+  padding: 0;
 }
 
-.characteristic dd {
+.characteristic_description {
+  display: block;
   font-family: "Gilroy", Arial, sans-serif;
   font-style: normal;
   font-weight: 300;
@@ -519,7 +523,8 @@ a.slider_button {
   padding-right: 62px;
 }
 
-.characteristic dt {
+.characteristic_title {
+  display: block;
   font-family: "Gilroy", Arial, sans-serif;
   font-style: normal;
   font-weight: 300;
@@ -531,6 +536,7 @@ a.slider_button {
 .division_list {
   list-style: none;
   display: flex;
+  flex-wrap: wrap;
   padding: 115px 0 0 0;
 }
 
@@ -988,20 +994,19 @@ textarea.modal-error {
   font-weight: 800;
   font-size: 47px;
   line-height: 58px;
-  margin-left: 60px;
   margin-top: 44px;
   margin-bottom: 30px;
 }
 
 .catalog_content {
   display: grid;
-  grid-template-columns: 33.5% auto;
-  grid-template-rows: auto auto auto auto;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto auto auto;
 }
 
 .breadcrumbs {
   list-style: none;
-  margin: 10px 0 49px 60px;
+  margin: 10px 0 49px 0;
   padding: 0;
 }
 
@@ -1040,6 +1045,7 @@ textarea.modal-error {
 .filter {
   background-color: var(--basic-grey-light);
   grid-row-start: span 3;
+  height: 100%;
 }
 
 .filter_header_wrap {
@@ -1062,6 +1068,7 @@ textarea.modal-error {
   margin: 0;
   width: 269px;
   text-transform: uppercase;
+  padding-left: 61px;
 }
 
 .filter_form_wrap {
@@ -1142,6 +1149,7 @@ textarea.modal-error {
   border: 2px solid var(--basic-black);
   border-radius: 2px;
   display: inline-block;
+  vertical-align: middle;
   margin-right: 18px;
 }
 
@@ -1175,6 +1183,7 @@ textarea.modal-error {
   border: 2px solid var(--basic-black);
   border-radius: 50%;
   display: inline-block;
+  vertical-align: middle;
   margin-right: 15px;
 }
 
@@ -1495,6 +1504,10 @@ a.footer_personal_item-out {
 .catalog_header_wrap {
   display: block;
   grid-column-start: span 2;
+  grid-row: 1/2;
+  grid-column: 1/-1;
+  width: 1100px;
+  padding-left: 60px;
 }
 
 .good {
@@ -1610,6 +1623,7 @@ a.footer_personal_item-out {
   display: inline-block;
   vertical-align: top;
   margin: 0;
+  text-align: end;
 }
 .paginator {
   background-color: var(--basic-grey-light);
