@@ -349,6 +349,7 @@ div.slider_img_second {
 .slider_text {
   padding: 0;
   margin: 0 0 51px 0;
+  width: 475px;
 }
 
 a.slider_button {
@@ -728,13 +729,14 @@ h3.division_header_big {
 }
 
 .modal-top input {
-  width: 340px;
+  width: 360px;
   height: 50px;
   background-color: var(--basic-grey-half-light);
-  border: 0;
   outline: 0;
   padding: 0;
   margin: 0;
+  border: 2px solid var(--basic-grey-half-light);
+  box-sizing: border-box;
 }
 
 .modal-top input:hover, .modal-top textarea:hover {
@@ -744,7 +746,6 @@ h3.division_header_big {
 .modal-top input:focus, .modal-top textarea:focus {
   background-color: var(--basic-white);
   border: 2px solid var(--special-yellow);
-  box-sizing: border-box;
 }
 
 .modal-top input[placeholder]:focus, .modal-top textarea[placeholder]:focus {
@@ -764,11 +765,11 @@ h3.division_header_big {
   width: 100%;
   height: 167px;
   background-color: var(--basic-grey-half-light);
-  border: 0;
   outline: 0;
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  border: 2px solid var(--basic-grey-half-light);
 }
 
 .modal-top textarea[placeholder] {
@@ -817,6 +818,8 @@ textarea.modal-error {
   background-color: var(--special-yellow);
   opacity: 0.5;
   border-radius: 50%;
+  outline: none;
+  border: 0;
 }
 
 .close::before, .close::after {
@@ -1256,11 +1259,13 @@ textarea.modal-error {
   display: flex;
 }
 
-.filter_price-value input{
+.filter_price-value input {
   background-color: var(--basic-grey-light);
   border: 0;
   outline: 0;
   width: 77px;
+  font-weight: 300;
+  font-family: "Gilroy", Arial, sans-serif;
 }
 
 .sort {
@@ -1606,7 +1611,7 @@ a.footer_personal_item-out {
   font-size: 18px;
   line-height: 22px;
   letter-spacing: 0.05em;
-  width: 271px;
+  width: 274px;
   display: inline-block;
   vertical-align: top;
   margin: 0;
@@ -1619,7 +1624,7 @@ a.footer_personal_item-out {
   font-size: 16px;
   line-height: 24px;
   letter-spacing: 0.05em;
-  width: 85px;
+  width: 82px;
   display: inline-block;
   vertical-align: top;
   margin: 0;
