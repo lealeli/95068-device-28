@@ -1,14 +1,14 @@
-let slider = document.querySelectorAll('.slider_item');
-let sliderInput = document.querySelectorAll('.slider > input');
+let slider = document.querySelectorAll(".slider_item");
+let sliderInput = document.querySelectorAll(".slider > input");
 
 for (let element of sliderInput) {
-  element.addEventListener('change', (event) => {
+  element.addEventListener("change", (event) => {
     const num = event.target.dataset.num;
     for (let elem of slider) {
-      elem.classList.add('visually-hidden');
+      elem.classList.add("visually-hidden");
     }
 
-    document.querySelector('.slider_item:nth-child('+num+')').classList.remove('visually-hidden');
+    document.querySelector(".slider_item:nth-child("+num+")").classList.remove("visually-hidden");
   });
 }
 
@@ -61,7 +61,7 @@ close_lost.addEventListener("click", function (event) {
 });
 
 window.addEventListener("keydown", function (event) {
-  if (event.keyCode == 27) {
+  if (event.keyCode === 27) {
     if (popup_lost.classList.contains("modal-ok-show")) {
       popup_lost.classList.remove("modal-ok-show");
     }
@@ -83,7 +83,7 @@ mapClose.addEventListener("click", function (event) {
 });
 
 window.addEventListener("keydown", function (event) {
-  if (event.keyCode == 27) {
+  if (event.keyCode === 27) {
     if (mapPopup.classList.contains("modal-ok-show")) {
       mapPopup.classList.remove("modal-ok-show");
     }
