@@ -779,6 +779,7 @@ h3.division_header_big {
   opacity: 0.4;
   padding-left: 20px;
   padding-top: 16px;
+  resize:none;
 }
 
 .modal-no, .modal-ok {
