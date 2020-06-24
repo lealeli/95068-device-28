@@ -297,7 +297,6 @@ div.slider_img_second {
 #slider2:checked ~ .slider_label label[for="slider2"]::after,
 #slider3:checked ~ .slider_label label[for="slider3"]::after {
   content: "";
-  display: inline-block;
   vertical-align: middle;
   width: 6px;
   height: 6px;
@@ -390,6 +389,7 @@ a.slider_button {
   width: 757px;
   min-height: 320px;
   padding-left: 115px;
+  padding-right: 20px;
 }
 
 .services {
@@ -491,7 +491,7 @@ a.slider_button {
   display: block;
   background: url("../img/warranty.svg") no-repeat;
   top: 55px;
-  right: -19px;
+  right: -31px;
   position: absolute;
 }
 
@@ -1032,6 +1032,11 @@ textarea.modal-error {
   padding-right: 10px;
 }
 
+.breadcrumbs_item a{
+  position: relative;
+  margin-right: 31px;
+}
+
 .breadcrumbs_item > a:hover {
   opacity: 0.6;
 }
@@ -1044,12 +1049,12 @@ textarea.modal-error {
   content: "";
   background-image: url("../img/arrow.svg");
   background-repeat: no-repeat;
-  width: 10px;
-  height: 10px;
-  display: inline-block;
-  line-height: 20px;
-  vertical-align: middle;
-  margin-left: 18px;
+  background-color: var(--basic-white);
+  width: 4px;
+  height: 7px;
+  position: absolute;
+  top: 9px;
+  margin-left: 19px;
 }
 
 .filter {
@@ -1080,7 +1085,7 @@ textarea.modal-error {
   margin: 0;
   width: 269px;
   text-transform: uppercase;
-  padding-left: 61px;
+  padding-left: 65px;
 }
 
 .filter_form {
@@ -1154,8 +1159,6 @@ textarea.modal-error {
   height: 20px;
   border: 2px solid var(--basic-black);
   border-radius: 2px;
-  display: inline-block;
-  vertical-align: middle;
   margin-right: 18px;
 }
 
@@ -1188,8 +1191,6 @@ textarea.modal-error {
   height: 20px;
   border: 2px solid var(--basic-black);
   border-radius: 50%;
-  display: inline-block;
-  vertical-align: middle;
   margin-right: 15px;
 }
 
@@ -1248,6 +1249,7 @@ textarea.modal-error {
   border-radius: 50%;
   background-color: var(--basic-black-transpery-light);
   box-shadow: 0 2px 2px var(--basic-black-transpery-18);
+  outline: none;
 }
 
 .left-circle {
@@ -1606,6 +1608,10 @@ a.footer_personal_item-out {
 .good_item {
   margin-top: 50px;
   position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: baseline;
+  justify-content: space-between;
 }
 
 .good_item_header {
@@ -1615,9 +1621,7 @@ a.footer_personal_item-out {
   font-size: 18px;
   line-height: 22px;
   letter-spacing: 0.05em;
-  width: 274px;
-  display: inline-block;
-  vertical-align: top;
+  width: 276px;
   margin: 0;
 }
 
@@ -1628,12 +1632,10 @@ a.footer_personal_item-out {
   font-size: 16px;
   line-height: 24px;
   letter-spacing: 0.05em;
-  width: 82px;
-  display: inline-block;
-  vertical-align: top;
+  width: 80px;
   margin: 0;
-  text-align: end;
 }
+
 .paginator {
   background-color: var(--basic-grey-light);
   font-family: "Gilroy", Arial, sans-serif;
