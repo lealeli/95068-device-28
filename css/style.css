@@ -363,7 +363,7 @@ div.slider_img_second {
 }
 
 a.slider_button {
-  width: 220px;
+  width: 217px;
 }
 
 .services_wrap {
@@ -875,8 +875,8 @@ textarea.modal-error {
 
 .button {
   display: block;
-  width: 260px;
-  padding: 9px 0 9px 2px;
+  width: 257px;
+  padding: 9px 0 9px 3px;
 
   font-family: "Gilroy", Arial, sans-serif;
   font-style: normal;
@@ -1195,11 +1195,11 @@ textarea.modal-error {
 }
 
 .checkbox:focus + .filter_label::before {
-  border: 2px solid var(--basic-black-transpery-6);
+  opacity: 0.6;
 }
 
 .radiobutton:focus + .radio-label::before {
-  border: 2px solid var(--basic-black-transpery-6);
+  opacity: 0.6;
 }
 
 .radio-label {
@@ -1381,20 +1381,10 @@ textarea.modal-error {
   opacity: 1;
 }
 
-
 .filter_button {
   display: block;
   width: 200px;
   padding: 9px 0;
-
-  font-family: "Gilroy", Arial, sans-serif;
-  font-style: normal;
-  font-weight: 800;
-  font-size: 18px;
-  line-height: 22px;
-  text-transform: uppercase;
-  letter-spacing: 0.2em;
-  text-align: center;
 
   background: linear-gradient(180deg, var(--basic-grey-light) 40%, var(--special-yellow-dark) 40%, var(--special-yellow-dark) 60%, var(--basic-grey-light) 60%);
 
@@ -1606,7 +1596,8 @@ a.footer_personal_item-out {
   letter-spacing: 0.1em;
   opacity: 0.5;
   text-align: center;
-  margin-top: 10px;
+  margin-top: 14px;
+  margin-right: 8px;
 }
 
 .good_chart:hover {
@@ -1618,6 +1609,9 @@ a.footer_personal_item-out {
 }
 
 .good_cart {
+  margin-top: 26px;
+  width: 200px;
+  margin-right: 8px;
   background: linear-gradient(180deg, transparent 40%, var(--special-yellow-dark) 40%, var(--special-yellow-dark) 60%, transparent 60%);
 }
 
