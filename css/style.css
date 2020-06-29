@@ -306,6 +306,12 @@ div.slider_img_second {
   box-sizing: border-box;
 }
 
+#slider1:focus ~ .slider_label label[for="slider1"],
+#slider2:focus ~ .slider_label label[for="slider2"],
+#slider3:focus ~ .slider_label label[for="slider3"] {
+  border: 1px solid var(--basic-grey);
+}
+
 .slider_content_wrap {
   position: relative;
   padding-top: 34px;
@@ -365,7 +371,7 @@ a.slider_button {
 }
 
 .services_menu {
-  width: 285px;
+  width: 292px;
   min-height: 162px;
   position: relative;
   display: flex;
@@ -405,13 +411,17 @@ a.slider_button {
   line-height: 58px;
   letter-spacing: 0.2em;
   margin-top: 16px;
-  margin-bottom: 44px;
+  margin-bottom: 42px;
 }
 
 .services_text {
   line-height: 28px;
   letter-spacing: 0.1em;
   width: 570px;
+}
+
+.services_text_big {
+  line-height: 30px;
 }
 
 .services_item {
@@ -431,7 +441,7 @@ a.slider_button {
 .services_button {
   display: block;
   width: 160px;
-
+  padding-left: 2px;
   font-family: "Gilroy", Arial, sans-serif;
   font-style: normal;
   font-weight: 800;
@@ -441,6 +451,7 @@ a.slider_button {
   letter-spacing: 0.2em;
   text-align: center;
   height: 40px;
+  cursor: pointer;
   background: linear-gradient(180deg, transparent 40%, var(--special-yellow-dark) 40%, var(--special-yellow-dark) 60%, transparent 60%);
 }
 
@@ -458,8 +469,15 @@ a.slider_button {
   grid-template-columns: 160px 120px;
   align-content: center;
   align-items: center;
-  padding: 0;
+  padding: 0 0 0 2px;
   height: 40px;
+}
+
+#btn-1:focus ~ .services_menu label[for="btn-1"],
+#btn-2:focus ~ .services_menu label[for="btn-2"],
+#btn-3:focus ~ .services_menu label[for="btn-3"]
+{
+  outline: 2px solid var(--basic-grey);
 }
 
 #btn-1:checked ~ .services_menu label[for="btn-1"]::after,
@@ -480,18 +498,18 @@ a.slider_button {
   display: block;
   background: url("../img/delivery.svg") no-repeat;
   top: 73px;
-  right: 0;
+  right: -18px;
   position: absolute;
 }
 
 .guarantee::after {
   content: "";
-  width: 171px;
+  width: 170px;
   height: 195px;
   display: block;
   background: url("../img/warranty.svg") no-repeat;
   top: 55px;
-  right: -31px;
+  right: -30px;
   position: absolute;
 }
 
@@ -502,7 +520,7 @@ a.slider_button {
   display: block;
   background: url("../img/credit.svg") no-repeat;
   top: 49px;
-  right: 5px;
+  right: -13px;
   position: absolute;
 }
 
@@ -621,7 +639,7 @@ h3.division_header_big {
 .about {
   width: 475px;
   padding-right: 85px;
-  padding-bottom: 77px;
+  padding-bottom: 76px;
   margin-right: 40px;
 }
 
@@ -647,11 +665,11 @@ h3.division_header_big {
 .about_content {
   line-height: 28px;
   margin: 0;
-  padding-bottom: 38px;
+  padding-bottom: 39px;
 }
 
 .about_list {
-  margin: 24px 0 56px 0;
+  margin: 22px 0 56px 0;
   padding: 0;
   list-style: none;
 }
@@ -681,7 +699,7 @@ h3.division_header_big {
 
 .contact {
   width: 560px;
-  padding-bottom: 77px;
+  padding-bottom: 76px;
 }
 
 .contact::before {
@@ -830,6 +848,14 @@ textarea.modal-error {
   border: 0;
 }
 
+.close:hover {
+  opacity: 1;
+}
+
+.close:focus {
+  opacity: 0.3;
+}
+
 .close::before, .close::after {
   content: "";
   position: absolute;
@@ -850,7 +876,7 @@ textarea.modal-error {
 .button {
   display: block;
   width: 260px;
-  padding: 9px 0;
+  padding: 9px 0 9px 2px;
 
   font-family: "Gilroy", Arial, sans-serif;
   font-style: normal;
@@ -1165,11 +1191,15 @@ textarea.modal-error {
 .checkbox:checked + .filter_label::before {
   background-image: url("../img/checkbox-on.svg");
   background-repeat: no-repeat;
-  background-position: 50% 50%;
+  background-position: 55% 55%;
 }
 
-.checkbox {
-  display: none;
+.checkbox:focus + .filter_label::before {
+  border: 2px solid var(--basic-black-transpery-6);
+}
+
+.radiobutton:focus + .radio-label::before {
+  border: 2px solid var(--basic-black-transpery-6);
 }
 
 .radio-label {
@@ -1205,15 +1235,11 @@ textarea.modal-error {
 .radiobutton:checked + .radio-label::before {
   background-image: url("../img/radio-on.svg");
   background-repeat: no-repeat;
-  background-position: 50% 50%;
+  background-position: 55% 55%;
 }
 
 .radiobutton:disabled + .radio-label::before {
   opacity: 0.25;
-}
-
-.radiobutton {
-  display: none;
 }
 
 .filter-slider {
@@ -1250,6 +1276,10 @@ textarea.modal-error {
   background-color: var(--basic-black-transpery-light);
   box-shadow: 0 2px 2px var(--basic-black-transpery-18);
   outline: none;
+}
+
+.circle:hover, .circle:focus {
+  box-shadow: 0 2px 2px var(--basic-black);
 }
 
 .left-circle {
@@ -1591,7 +1621,7 @@ a.footer_personal_item-out {
   background: linear-gradient(180deg, transparent 40%, var(--special-yellow-dark) 40%, var(--special-yellow-dark) 60%, transparent 60%);
 }
 
-.good_item:hover .good_insert {
+.good_item:hover .good_insert, .good_item:focus-within .good_insert {
   display: grid;
   justify-content: center;
   align-content: center;
