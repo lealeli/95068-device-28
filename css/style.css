@@ -309,7 +309,7 @@ div.slider_img_second {
 #slider1:focus ~ .slider_label label[for="slider1"],
 #slider2:focus ~ .slider_label label[for="slider2"],
 #slider3:focus ~ .slider_label label[for="slider3"] {
-  border: 1px solid var(--basic-grey);
+  outline: 2px solid var(--special-yellow-dark);
 }
 
 .slider_content_wrap {
@@ -477,7 +477,7 @@ a.slider_button {
 #btn-2:focus ~ .services_menu label[for="btn-2"],
 #btn-3:focus ~ .services_menu label[for="btn-3"]
 {
-  outline: 2px solid var(--basic-grey);
+  outline: 2px solid var(--special-yellow-dark);
 }
 
 #btn-1:checked ~ .services_menu label[for="btn-1"]::after,
@@ -1235,7 +1235,7 @@ textarea.modal-error {
 .radiobutton:checked + .radio-label::before {
   background-image: url("../img/radio-on.svg");
   background-repeat: no-repeat;
-  background-position: 55% 55%;
+  background-position: center;
 }
 
 .radiobutton:disabled + .radio-label::before {
